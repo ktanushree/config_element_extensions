@@ -21,17 +21,14 @@ MIT
  - **Github:** Download files to a local directory, manually run `config_element_extensions.py`. 
 
 ### Examples of usage:
-Get events from a site:
+Configuration via CLI:
 ```
-./getevents.py -S Sitename 
+./config_element_extensions.py -SN Sitename -EN Elementname -IN Interfacename -IP 10.32.15.0/24 -AP SSH -AC ALLOW
 ```
-Get events from a multiple sites:
-``` 
-./getevents.py -S Site1,Site2,Site3
-```
-Get events for specific event codes:
+
+Configuration via CSV:
 ```angular2
-./getevents.py -EC NETWORK_VPNLINK_DOWN,NETWORK_DIRECTINTERNET_DOWN
+./config_element_extensions.py -f csvfilename.csv
 ```
 
 Use the -H hours to specify the time delta in hours for the event query.
