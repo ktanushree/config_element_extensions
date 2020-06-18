@@ -257,6 +257,7 @@ def go():
             print("ERR: Invalid action: {}. Please choose: ALLOW or DENY".format(action))
             sys.exit()
 
+        site = args['site']
         element = args['element']
         interface = args['interface']
         prefix = args['ipprefix']
