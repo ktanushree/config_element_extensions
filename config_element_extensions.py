@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-CGNX script to enable SSH on interface specified in the CSV or via commandline
+CGNX script to configure element extensions on interface specified in the CSV or via commandline
 
 tanushree@cloudgenix.com
 
@@ -18,7 +18,7 @@ import json
 
 # Global Vars
 SDK_VERSION = cloudgenix.version
-SCRIPT_NAME = 'CloudGenix: Config SSH'
+SCRIPT_NAME = 'CloudGenix: Config Element Extensions'
 CSV_HEADER = ["site","element","interface","prefix","app","action"]
 
 # Set NON-SYSLOG logging to use function name
